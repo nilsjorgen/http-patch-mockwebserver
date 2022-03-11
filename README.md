@@ -11,3 +11,7 @@ for `HTTP PATCH`.
 
 Since `MockWebServer` has a dependency on `OkHttp`, the tests runs fine since `OkHttp` puts
 the `OkHttp3ClientHttpRequestFactory` on the test classpath.
+
+## Usage
+
+Run `./gradlew clean build` in order to execute the test.
