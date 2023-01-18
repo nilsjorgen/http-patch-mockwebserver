@@ -28,7 +28,7 @@ class BookClientTest {
     private lateinit var bookClient: BookClient
 
     @Test
-    fun `fetching all books should return all three books`() {
+    fun `Fetching all books should return all available books`() {
         val mockResult = objectMapper.readValue(File("data/books.json"), Array<Book>::class.java)
 
         val mockResponse = MockResponse()
@@ -46,7 +46,7 @@ class BookClientTest {
     }
 
     @Test
-    fun `updating a book title should return the updated book`() {
+    fun `Updating a book title should return the updated book`() {
         val mockResult = Book(3, "Småfolk", "Thorbjørn Egner")
 
         val mockResponse = MockResponse()
